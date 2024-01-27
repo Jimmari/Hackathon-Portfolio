@@ -50,14 +50,14 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Hi, it's me Jim</h2>
+            <h2 class="hero_title">Hi! it's me Jim</h2>
             <p class="hero_desc">I am a software engineer in Nairobi, Kenya</p>
           </div>
         </div>
       </div>
     </section>
     <section id="about">
-        <div class="container mt-4 pt-4">
+        <div class="container mt-6 pt-6">
             <h1 class="text-center">About Me</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
@@ -291,32 +291,58 @@
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
+                    <div class="col-lg-8 mt-5 mt-lg-0">
 
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="container-fluid">
+                        <form action="https://formspree.io/f/mzbndyrp" method="post" role="form" class="php-email-form">
+                          <div class="row">
+                            <div class="col-md-6 form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                          </div>
+                          <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                          </div>
+                          <div class="my-3">
+                            <div class="loading"></div>
+                            <div class="error-message"></div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+            
+                      </div>
+            
+                    </div>
+            
+                  </div>
             <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"> Facebook</i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram">Instagram</i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter">Twitter</i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch">Twitch</i></a>
             </div>
         </div>
     </footer>
   </body>
 </html>
+ <!-- Footer-->
+ <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0">Copyright &copy; My Website 2024</div></div>
+            <div class="col-auto">
+                <a class="small" href="#!">Privacy</a>
+                <span class="mx-1">&middot;</span>
+                <a class="small" href="#!">Terms</a>
+                <span class="mx-1">&middot;</span>
+                <a class="small" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
